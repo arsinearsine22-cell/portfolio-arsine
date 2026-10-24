@@ -1,0 +1,163 @@
+.detail {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: var(--bg);
+  overflow-y: auto;
+}
+
+.detail-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 24px 80px;
+}
+
+.detail-bar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  margin-bottom: 24px;
+  background: var(--bg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.detail-bar .label {
+  margin: 0;
+}
+
+.detail-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.detail-text {
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.detail-h3 {
+  font: 12px var(--mono);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 48px 0 16px;
+}
+
+.kpis {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 24px 0;
+}
+
+.kpis b {
+  display: block;
+  font: 700 1.9rem var(--mono);
+  color: var(--accent);
+}
+
+.kpis span {
+  font-size: 12px;
+  color: #5a5a70;
+}
+
+.vals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin: 14px 0;
+}
+
+.vals div {
+  background: #14141f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.vals b {
+  display: block;
+  font: 700 1.1rem var(--mono);
+}
+
+.vals span {
+  font-size: 11px;
+  color: #5a5a70;
+}
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+figure {
+  margin: 8px 0;
+}
+
+figure img,
+figure video {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #fff;
+}
+
+figure img {
+  cursor: zoom-in;
+}
+
+figure video {
+  background: #000;
+}
+
+figcaption {
+  font: 11px var(--mono);
+  color: #5a5a70;
+  margin-top: 6px;
+}
+
+.video.portrait video {
+  max-width: 380px;
+  max-height: 80vh;
+  margin: 0 auto;
+}
+
+.detail-cta {
+  text-align: center;
+  margin-top: 56px;
+}
+
+.detail-cta p {
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.zoom {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.92);
+  overflow: auto;
+  cursor: zoom-out;
+}
+
+.zoom img {
+  width: 100%;
+  min-width: 900px;
+  display: block;
+  background: #fff;
+}
+.detail-bar .btn {
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+}

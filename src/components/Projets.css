@@ -1,0 +1,41 @@
+.projets-bg {
+  background: #0f0f18;
+}
+
+.projets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.projet-emoji {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.projet h3 {
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.projet p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.tag {
+  padding: 4px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 99px;
+  font: 10px var(--mono);
+  color: var(--muted);
+}

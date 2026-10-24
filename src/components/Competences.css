@@ -1,0 +1,26 @@
+.skills-bg {
+  background: #0f0f18;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.skill h3 {
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  margin-bottom: 14px;
+  padding-left: 10px;
+  border-left: 3px solid var(--c);
+}
+
+.skill .tags {
+  margin-top: 0;
+}
+
+.skill .tag:hover {
+  color: var(--c);
+  border-color: var(--c);
+}

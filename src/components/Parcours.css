@@ -1,0 +1,70 @@
+.title {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 32px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: linear-gradient(var(--accent), #a78bfa, transparent);
+}
+
+.step {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.step::before {
+  content: '';
+  position: absolute;
+  left: -27px;
+  top: 28px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: var(--bg);
+}
+
+.step-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 16px 16px 0;
+}
+
+.step-card h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.place {
+  font: 13px var(--mono);
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.desc {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.date {
+  font: 13px var(--mono);
+  color: #5a5a70;
+}
