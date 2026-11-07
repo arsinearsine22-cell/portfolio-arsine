@@ -27,7 +27,7 @@ function Competences() {
   return (
     <section id="skills" className="skills-bg">
       <div className="section">
-        <p className="label">// compétences</p>
+        <p className="label about-label">Compétences</p>
         <h2 className="title">
           Stack
           <br />

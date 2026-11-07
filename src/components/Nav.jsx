@@ -3,8 +3,8 @@ import './Nav.css'
 
 const links = [
   { label: 'À propos', href: '#about' },
-  { label: 'Parcours', href: '#parcours' },
   { label: 'Projets', href: '#projets' },
+  { label: 'Parcours', href: '#parcours' },
   { label: 'Compétences', href: '#skills' },
   { label: 'Contact', href: '#contact' },
 ]

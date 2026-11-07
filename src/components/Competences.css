@@ -1,5 +1,5 @@
 .skills-bg {
-  background: #0f0f18;
+  background: var(--bg1);
 }
 
 .skills-grid {
@@ -23,4 +23,10 @@
 .skill .tag:hover {
   color: var(--c);
   border-color: var(--c);
+}
+.skills-bg {
+  background: var(--bg);
+}
+.skills-bg {
+  background: var(--bg1);
 }

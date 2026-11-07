@@ -9,37 +9,21 @@ const steps = [
     desc: 'Mécanique, mécatronique, mécanique industrielle et science des matériaux.',
   },
   {
-    icon: '⚙️',
-    title: 'Ingénieure freelance',
-    place: 'ARSINE Engineering',
-    date: 'En cours',
-    desc: 'Études mécaniques, modélisation et dossiers de plans pour bureaux d’étude et clients francophones.',
-  },
-  {
     icon: '🎓',
     title: 'Licence',
     place: 'École Supérieure Polytechnique d’Antsiranana',
     date: '2024',
-    desc: 'Projet de licence : machine à granulés pour volailles.',
-  },
-  {
-    icon: '📘',
-    title: 'Baccalauréat',
-    place: 'Lycée Public Mananara Nord',
-    date: '2019',
-    desc: '',
+        desc: 'Dimensionnement, conception et réalisation d’une machine.',
   },
 ]
 
 function Parcours() {
   return (
-    <section id="parcours">
+    <section id="parcours" className="parcours-bg">
       <div className="section">
-        <p className="label">// parcours</p>
+       <p className="label about-label">Parcours</p>
         <h2 className="title">
-          Formation &amp;
-          <br />
-          expérience
+          Formation 
         </h2>
 
         <div className="timeline">

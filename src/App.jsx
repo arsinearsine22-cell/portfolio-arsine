@@ -1,9 +1,9 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import About from './components/About'
-import Parcours from './components/Parcours'
 import Projets from './components/Projets'
 import Competences from './components/Competences'
+import Parcours from './components/Parcours'
 import Contact from './components/Contact'
 
 function App() {
@@ -12,9 +12,9 @@ function App() {
       <Nav />
       <Hero />
       <About />
-      <Parcours />
       <Projets />
       <Competences />
+      <Parcours />
       <Contact />
     </>
   )

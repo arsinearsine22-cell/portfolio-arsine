@@ -1,5 +1,5 @@
 .projets-bg {
-  background: #0f0f18;
+  background: var(--bg1);
 }
 
 .projets-grid {
@@ -8,9 +8,14 @@
   gap: 20px;
 }
 
-.projet-emoji {
-  font-size: 32px;
-  margin-bottom: 12px;
+.projet-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 16px;
 }
 
 .projet h3 {
@@ -33,9 +38,12 @@
 
 .tag {
   padding: 4px 10px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  background: var(--tagbg);
   border-radius: 99px;
   font: 10px var(--mono);
   color: var(--muted);
+}
+.projets-bg {
+  background: var(--bg);
 }

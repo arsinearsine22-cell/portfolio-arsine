@@ -9,7 +9,7 @@ function Projets() {
   return (
     <section id="projets" className="projets-bg">
       <div className="section">
-        <p className="label">// projets</p>
+      <p className="label about-label">Projets</p>
         <h2 className="title">
           Ce que
           <br />
@@ -23,7 +23,7 @@ function Projets() {
               key={p.id}
               onClick={() => p.detail && setOuvert(p)}
             >
-              <div className="projet-emoji">{p.emoji}</div>
+              <img className="projet-img" src={p.image} alt={p.title} loading="lazy" />
               <h3>{p.title}</h3>
               <p>{p.desc}</p>
               <div className="tags">

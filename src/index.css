@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap');
 
 :root {
-  --bg: #0a0a0f;
-  --text: #f0f0f5;
-  --muted: #8888a0;
-  --accent: #00d4ff;
+  --bg: #f7f8fc;
+  --bg1: #eef1f8;
+  --card: #ffffff;
+  --text: #111318;
+  --muted: #333847;
+  --dim: #555a6b;
+  --border: rgba(0, 0, 0, 0.1);
+  --tagbg: rgba(0, 0, 0, 0.04);
+  --nav: rgba(247, 248, 252, 0.92);
+  --accent: #0077b6;
   --mono: 'Space Mono', monospace;
   --sans: 'DM Sans', sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -22,9 +22,6 @@ body {
   line-height: 1.6;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 .section {
   max-width: 1100px;
   margin: 0 auto;
@@ -40,14 +37,14 @@ html {
 }
 
 .card {
-  background: #14141f;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--card);
+  border: 1px solid var(--border);
   border-radius: 16px;
   padding: 24px;
   transition: 0.3s;
 }
 
 .card:hover {
-  border-color: rgba(0, 212, 255, 0.3);
+  border-color: var(--accent);
   transform: translateY(-3px);
 }

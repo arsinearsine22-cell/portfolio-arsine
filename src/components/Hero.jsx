@@ -43,15 +43,24 @@ function Hero() {
       <div className="hero-inner">
         <div className="badge">
           <span className="dot"></span>
-          DISPONIBLE — FREELANCE &amp; OPPORTUNITÉS
+          DISPONIBLE — FREELANCE · CDI · CDD
         </div>
+
+        <img
+          className="photo"
+          src="/photo.jpg"
+          alt="Arsine"
+          onError={(e) => (e.target.style.display = 'none')}
+        />
 
         <h1>
           Arsine
           <br />
           <span className="glow">Ingénierie mécanique</span>
         </h1>
-
+          <a className="hero-mail" href="mailto:arsinearsine22@gmail.com">
+          arsinearsine22@gmail.com
+          </a>
         <div className="typing">
           <b>›</b> <span>{typed}</span>
           <span className="cursor"></span>
@@ -66,6 +75,9 @@ function Hero() {
         <div className="actions">
           <a className="btn primary" href="#projets">Voir mes projets →</a>
           <a className="btn" href="#contact">Me contacter</a>
+                    <a className="btn" href="/cv-arsine.pdf" download="CV-Arsine.pdf">
+            Télécharger mon CV ↓
+          </a>
         </div>
       </div>
     </section>

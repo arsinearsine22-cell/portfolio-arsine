@@ -6,45 +6,28 @@
   margin-bottom: 40px;
 }
 
-.timeline {
-  position: relative;
-  padding-left: 32px;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 10px;
-  top: 8px;
-  bottom: 8px;
-  width: 1px;
-  background: linear-gradient(var(--accent), #a78bfa, transparent);
-}
-
-.step {
-  position: relative;
-  margin-bottom: 24px;
-}
-
-.step::before {
-  content: '';
-  position: absolute;
-  left: -27px;
-  top: 28px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 2px solid var(--accent);
+.parcours-bg {
   background: var(--bg);
 }
 
-.step-card {
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.step {
   display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
-  border-left: 3px solid var(--accent);
-  border-radius: 0 16px 16px 0;
+}
+
+.step-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  gap: 14px;
+  border-top: 3px solid var(--accent);
+  border-radius: 16px;
 }
 
 .step-card h3 {
@@ -66,5 +49,5 @@
 
 .date {
   font: 13px var(--mono);
-  color: #5a5a70;
+  color: var(--dim);
 }

@@ -20,7 +20,7 @@ function Contact() {
   return (
     <section id="contact" className="contact-bg">
       <div className="section">
-        <p className="label">// contact</p>
+        <p className="label about-label">Contact</p>
         <h2 className="title">
           Travaillons
           <br />
