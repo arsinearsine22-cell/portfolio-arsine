@@ -35,30 +35,34 @@ export const projets = [
             { value: '9,54 N·m', label: 'Moment de torsion' },
             { value: '95,4 N', label: 'Force tangentielle' },
             { value: '47,7 N', label: 'Effort radial' },
-            { value: '150 MPa', label: 'Contrainte admissible' },
+            { value: '450 MPa', label: 'Contrainte admissible' },
             { value: '22 mm', label: 'Diamètre d’arbre retenu' },
           ],
           images: [
-            { src: B + '03-calculs.jpg', caption: 'Données de calcul' },
-            { src: B + '04-reactions.jpg', caption: 'Réactions aux paliers et moment fléchissant' },
-            { src: B + '05-diametre.jpg', caption: 'Calcul du diamètre de l’arbre' },
+            { src: B + '03-calcul marteau.jpg', caption: 'Données de calcul' },
+            { src: B + '04-calculs.jpg', caption: 'Données de calcul' },
+            { src: B + '05-reactions.jpg', caption: 'Réactions aux paliers et moment fléchissant' },
+            { src: B + '06-diametre.jpg', caption: 'Calcul du diamètre de l’arbre' },
           ],
         },
         {
           title: '04 · Choix des matériaux',
-          images: [{ src: B + '06-materiaux.jpg', caption: 'Matériaux par pièce' }],
+          images: [{ src: B + '07-materiaux.jpg', caption: 'Matériaux par pièce' }],
         },
         {
           title: '05 · Simulation numérique',
-          text: 'L’étude statique de l’arbre donne une contrainte maximale de 1,19 MPa pour une limite d’élasticité de 241,275 MPa : la pièce est conforme, avec une marge très large.',
-          images: [{ src: B + '07-simulation.jpg', caption: 'Simulation statique de l’arbre' }],
+           text: "L'étude statique du marteau donne une contrainte maximale de 21,6 MPa pour une limite d'élasticité de 620 MPa. L'étude statique de l'arbre donne une contrainte maximale de 1,19 MPa pour une limite d'élasticité de 241 MPa.",
+           images: [
+            { src: B + '08-marteau.jpg', caption: 'Simulation statique du marteau' },
+            { src: B + '09-simulation.jpg', caption: "Simulation statique de l'arbre" }
+           ],
         },
         {
           title: '06 · Réalisation',
           images: [
-            { src: B + '08-realisation-1.jpg', caption: 'Marteau, arbre et poulie : modèle 3D et pièces réalisées' },
-            { src: B + '09-realisation-2.jpg', caption: 'Trémie, coque centrale et verseur' },
-            { src: B + '10-realisation-3.jpg', caption: 'Tamis, bâti et machine assemblée' },
+            { src: B + '12-realisation-1.jpg', caption: 'Marteau, arbre et poulie : modèle 3D et pièces réalisées' },
+            { src: B + '13-realisation-2.jpg', caption: 'Trémie, coque centrale et verseur' },
+            { src: B + '14-realisation-3.jpg', caption: 'Tamis, bâti et machine assemblée' },
           ],
         },
         {
